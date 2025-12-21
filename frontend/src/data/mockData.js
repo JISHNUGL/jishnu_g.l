@@ -17,21 +17,21 @@ export const personalInfo = {
 export const metrics = [
   {
     id: 1,
-    value: "10+",
-    label: "ITSM & CRM Projects",
-    description: "Implemented across Freshservice, Freshdesk, Freshsales & HubSpot"
+    value: "3+",
+    label: "Years Experience",
+    description: "In ITSM, CRM, automation, and customer support across multiple platforms"
   },
   {
     id: 2,
-    value: "3+",
-    label: "Years Experience",
-    description: "In ITSM automation, CRM implementation, and business analysis"
+    value: "10+",
+    label: "Certifications",
+    description: "Including HubSpot, Freshworks, AWS, and Cybersecurity certifications"
   },
   {
     id: 3,
-    value: "25%",
-    label: "Avg Efficiency Gain",
-    description: "Improved operational efficiency through automation"
+    value: "5+",
+    label: "Platforms Mastered",
+    description: "Freshservice, Freshdesk, Freshsales, HubSpot, and automation tools"
   }
 ];
 
