@@ -58,15 +58,19 @@ const Hero = () => {
 
         <div className="mb-12 opacity-0" style={{ animation: 'fadeInUp 0.8s ease forwards 0.6s' }}>
           <div 
-            className="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full bg-gradient-to-br from-red-100 via-pink-100 to-red-100 flex items-center justify-center border-4 border-red-500 overflow-hidden shadow-2xl"
+            className="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full border-4 border-red-500 overflow-hidden shadow-2xl relative"
             style={{
               animation: 'float 3s ease-in-out infinite',
               boxShadow: '0 0 60px rgba(239, 68, 68, 0.4)'
             }}
           >
-            <div className="text-6xl md:text-8xl font-bold bg-gradient-to-br from-red-500 to-pink-500 bg-clip-text text-transparent">
-              {personalInfo.name.split(' ').map(n => n[0]).join('')}
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_techportfolio-30/artifacts/7jpi300h_Untitled%20design.png"
+              alt={personalInfo.name}
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+            />
+            {/* Overlay gradient on hover */}
+            <div className="absolute inset-0 bg-gradient-to-br from-red-500/0 to-pink-500/0 hover:from-red-500/10 hover:to-pink-500/10 transition-all duration-500"></div>
           </div>
         </div>
 
