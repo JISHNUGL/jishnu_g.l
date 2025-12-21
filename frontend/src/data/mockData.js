@@ -6,6 +6,7 @@ export const personalInfo = {
   secondaryRole: "ITSM Automation & CRM Implementation Specialist",
   tagline: "I help companies streamline operations, automate workflows, and implement revenue-generating ITSM & CRM systems.",
   email: "jishnugl92@gmail.com",
+  phone: "+91 9994674488",
   linkedin: "https://www.linkedin.com/in/jishnu-gl",
   github: "#",
   availability: "Open to work",
