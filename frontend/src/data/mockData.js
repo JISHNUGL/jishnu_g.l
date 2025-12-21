@@ -226,35 +226,38 @@ export const timeline = [
 ];
 
 export const skills = {
+  "CRM Platforms": [
+    { name: "Freshsales", level: "Expert", projects: "10+" },
+    { name: "HubSpot CRM", level: "Expert", projects: "8+" },
+    { name: "Freshdesk", level: "Expert", projects: "10+" },
+    { name: "Salesforce (Basic)", level: "Intermediate", projects: "2" }
+  ],
   "ITSM Platforms": [
-    { name: "Freshservice", level: "Expert", projects: "5+" },
-    { name: "Freshdesk", level: "Advanced", projects: "4+" },
+    { name: "Freshservice", level: "Expert", projects: "10+" },
+    { name: "HelpDesk", level: "Advanced", projects: "5+" },
     { name: "ServiceNow (Basic)", level: "Intermediate", projects: "1" }
   ],
-  "CRM Platforms": [
-    { name: "Freshsales", level: "Advanced", projects: "3+" },
-    { name: "HubSpot", level: "Advanced", projects: "3+" },
-    { name: "Salesforce (Basic)", level: "Intermediate", projects: "1" }
+  "Automation & AI Tools": [
+    { name: "UiPath RPA", level: "Advanced", projects: "4+" },
+    { name: "Freshchat (AI Chatbot)", level: "Expert", projects: "6+" },
+    { name: "LiveChat.com", level: "Advanced", projects: "4+" },
+    { name: "GTaaS", level: "Advanced", projects: "3+" }
   ],
-  "Automation & Integration": [
-    { name: "Workflow Automation", level: "Expert", projects: "8+" },
-    { name: "API Integration", level: "Advanced", projects: "5+" },
-    { name: "Zapier/Make", level: "Advanced", projects: "4+" }
+  "Programming & Database": [
+    { name: "Python", level: "Intermediate", projects: "5+" },
+    { name: "SQL", level: "Advanced", projects: "8+" },
+    { name: "HTML", level: "Intermediate", projects: "4+" }
   ],
-  "Business Analysis": [
-    { name: "Requirements Gathering", level: "Expert", projects: "10+" },
-    { name: "Process Mapping", level: "Advanced", projects: "8+" },
-    { name: "Stakeholder Management", level: "Expert", projects: "10+" }
+  "Data & Analytics": [
+    { name: "Data Analysis", level: "Advanced", projects: "10+" },
+    { name: "Reporting & Dashboards", level: "Expert", projects: "10+" },
+    { name: "Cross-platform Integration", level: "Advanced", projects: "6+" },
+    { name: "Data Labeling (ML)", level: "Advanced", projects: "1" }
   ],
-  "Data & Reporting": [
-    { name: "Excel/Google Sheets", level: "Advanced", projects: "10+" },
-    { name: "SQL (Basic)", level: "Intermediate", projects: "3+" },
-    { name: "Dashboard Design", level: "Advanced", projects: "6+" }
-  ],
-  "Technical Skills": [
-    { name: "Data Annotation (YOLO)", level: "Advanced", projects: "1" },
-    { name: "Quality Assurance", level: "Advanced", projects: "5+" },
-    { name: "Documentation", level: "Expert", projects: "10+" }
+  "Cloud & Certifications": [
+    { name: "AWS Cloud Practitioner", level: "Certified", projects: "N/A" },
+    { name: "HubSpot Marketing Hub", level: "Certified", projects: "N/A" },
+    { name: "Cybersecurity Foundation", level: "Certified", projects: "N/A" }
   ]
 };
 
