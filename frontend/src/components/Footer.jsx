@@ -45,7 +45,6 @@ const Footer = () => {
                 { id: 'work', label: 'Work' },
                 { id: 'about', label: 'About' },
                 { id: 'process', label: 'Process' },
-                { id: 'testimonials', label: 'Testimonials' },
                 { id: 'contact', label: 'Contact' }
               ].map((link) => (
                 <button
