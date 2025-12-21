@@ -196,32 +196,32 @@ export const achievements = [
 
 export const timeline = [
   {
-    year: "2024 - Present",
-    role: "ITSM & CRM Consultant",
-    company: "Freelance",
-    achievement: "Helping businesses optimize support and sales operations",
-    metric: "5+ successful implementations"
-  },
-  {
-    year: "2023 - 2024",
+    year: "Feb 2025 - Present",
     role: "Business Analyst",
     company: "Kambaa Incorporation",
-    achievement: "Led ITSM implementation improving SLA compliance by 30%",
-    metric: "500+ tickets/month automated"
+    achievement: "Leading ITSM operations using Freshservice with focus on SLA compliance and automated workflows",
+    metric: "Multi-platform integration expert"
   },
   {
-    year: "2022 - 2023",
-    role: "Data Analyst",
+    year: "Aug 2024 - Feb 2025",
+    role: "Associate Process Executive",
     company: "NVIDIA (via Randstad)",
-    achievement: "Contributed to autonomous vehicle ML model accuracy",
-    metric: "10K+ annotations validated"
+    achievement: "Annotated 2D dynamic obstacles and human behavior datasets for autonomous vehicle training",
+    metric: "High-precision ML data labeling"
   },
   {
-    year: "2021 - 2022",
-    role: "Junior Business Analyst",
-    company: "Osai e-Biz Integrators",
-    achievement: "Implemented retail CRM achieving 98% inventory accuracy",
-    metric: "First CRM implementation"
+    year: "Apr 2022 - Sep 2023",
+    role: "Technical Support Engineer",
+    company: "Osai e-Biz Integrators Pvt. Ltd.",
+    achievement: "Managed support tickets in Freshservice and customer leads in Freshsales",
+    metric: "Created ITSM/CRM training materials"
+  },
+  {
+    year: "2022 - 2024",
+    role: "M.Sc. Computer Science",
+    company: "Sri Ramakrishna College of Arts & Science",
+    achievement: "Advanced studies in computer science with focus on ITSM and automation",
+    metric: "CGPA: 7.96"
   }
 ];
 
