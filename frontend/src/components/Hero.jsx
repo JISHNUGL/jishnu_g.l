@@ -107,14 +107,15 @@ const Hero = () => {
             className="flex justify-center lg:justify-end items-center opacity-0"
             style={{ animation: 'fadeInImage 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.3s' }}
           >
-            <div className="relative w-full max-w-md lg:max-w-lg">
+            <div className="relative w-full">
               {/* Portrait Image */}
               <img 
                 src="https://customer-assets.emergentagent.com/job_techportfolio-30/artifacts/iksoxux4_Untitled_design-removebg-preview.png"
                 alt={personalInfo.name}
                 className="w-full h-auto object-contain filter grayscale"
                 style={{
-                  maxHeight: '650px'
+                  maxHeight: '85vh',
+                  minHeight: '600px'
                 }}
               />
             </div>
