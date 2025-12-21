@@ -7,6 +7,7 @@ import ClientStrip from "./components/ClientStrip";
 import ProjectGrid from "./components/ProjectGrid";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Certifications from "./components/Certifications";
 import Process from "./components/Process";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
@@ -22,6 +23,7 @@ function App() {
       <ProjectGrid />
       <About />
       <Skills />
+      <Certifications />
       <Process />
       <Testimonials />
       <Contact />
