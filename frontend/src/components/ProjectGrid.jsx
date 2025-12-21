@@ -36,12 +36,15 @@ const ProjectGrid = () => {
         {/* Filters */}
         <ScrollReveal delay={100}>
           <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {categories.map((cat) => (\n              <button
+            {categories.map((cat) => (
+              <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`px-6 py-2 rounded-full font-medium text-sm transition-all duration-300 transform hover:scale-105 ${\n                  selectedCategory === cat.id
+                className={`px-6 py-2 rounded-full font-medium text-sm transition-all duration-300 transform hover:scale-105 ${
+                  selectedCategory === cat.id
                     ? 'bg-gradient-to-r from-red-500 to-pink-500 text-white shadow-lg scale-105'
-                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 hover:border-red-300'\n                }`}
+                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 hover:border-red-300'
+                }`}
               >
                 {cat.label}
               </button>
