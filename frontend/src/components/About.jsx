@@ -14,17 +14,34 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                I'm a <strong>Business Analyst</strong> specializing in <strong>ITSM and CRM implementations</strong> that actually deliver results. Over the past 3+ years, I've helped companies across SaaS, AI/ML, and enterprise sectors transform their operations through smart automation and process optimization.
+                I'm a <strong>Business Analyst</strong> with hands-on experience in <strong>IT Service Management (ITSM), CRM systems, customer support, and process automation</strong>. Currently at Kambaa Incorporation, I lead ITSM operations using Freshservice with a focus on SLA compliance and automated workflows.
               </p>
               <p>
-                My approach is simple: <strong>understand the problem, design the right solution, and measure the impact</strong>. Whether it's improving SLA compliance by 30%, automating support workflows, or implementing revenue-generating CRM systems, I focus on outcomes that matter to the business.
+                My expertise spans across multiple platforms including <strong>Freshservice, Freshdesk, Freshsales, HubSpot CRM, and various automation tools like UiPath</strong>. I specialize in streamlining support operations, enhancing customer experiences, and driving operational efficiency through intelligent automation and data-driven decision-making.
               </p>
               <p>
-                I've worked with platforms like <strong>Freshservice, Freshdesk, Freshsales, and HubSpot</strong> to build systems that teams actually enjoy using. From campus operations handling 500+ tickets monthly to B2B sales teams closing $200K+ in additional revenue, I've seen firsthand how the right processes can transform business performance.
+                At <strong>NVIDIA (via Randstad)</strong>, I contributed to cutting-edge autonomous vehicle technology by annotating 2D dynamic obstacles and human behavior datasets for machine learning models. This experience gave me unique insights into AI/ML applications and the importance of high-precision data quality.
               </p>
               <p>
-                Beyond traditional business analysis, I've also contributed to cutting-edge <strong>AI/ML projects at NVIDIA</strong>, ensuring dataset quality for autonomous vehicle detection systems. This unique blend of technical depth and business acumen helps me bridge the gap between stakeholder needs and technical implementation.
+                With <strong>10+ professional certifications</strong> from HubSpot, Freshworks, AWS, and Google, and a <strong>Master's degree in Computer Science</strong>, I bring both theoretical knowledge and practical expertise to every project. My goal is to bridge the gap between business needs and technical solutions, creating systems that teams actually enjoy using.
               </p>
+            </div>
+
+            {/* Education Section */}
+            <div className="mt-8 p-6 bg-gray-50 rounded-xl">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Education</h3>
+              <div className="space-y-4">
+                <div>
+                  <div className="font-bold text-gray-900">Master of Science (M.Sc.) in Computer Science</div>
+                  <div className="text-sm text-gray-600">Sri Ramakrishna College of Arts & Science</div>
+                  <div className="text-sm text-gray-500">2022 - 2024 • CGPA: 7.96</div>
+                </div>
+                <div className="border-t border-gray-200 pt-4">
+                  <div className="font-bold text-gray-900">Bachelor of Computer Applications (B.C.A.)</div>
+                  <div className="text-sm text-gray-600">Sri Ramakrishna Mission Vidyalaya College of Arts & Science</div>
+                  <div className="text-sm text-gray-500">2019 - 2022 • CGPA: 7.08</div>
+                </div>
+              </div>
             </div>
           </div>
 
