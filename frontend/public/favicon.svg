@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="100" fill="#111827"/>
+  <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0z" fill="#000000" opacity="0"/>
+  <circle cx="256" cy="256" r="240" fill="url(#grad1)" />
+  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#ff5c35;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+  </linearGradient>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="300" fill="white">J</text>
+</svg>
