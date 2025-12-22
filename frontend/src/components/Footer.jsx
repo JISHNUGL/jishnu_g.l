@@ -39,18 +39,21 @@ const Footer = () => {
 
           {/* Middle: Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
-            <nav className="space-y-2">
+            <h3 className="text-lg font-bold mb-6 text-white uppercase tracking-wider text-xs">Quick Links</h3>
+            <nav className="flex flex-col space-y-3">
               {[
-                { id: 'work', label: 'Work' },
                 { id: 'about', label: 'About' },
+                { id: 'clients', label: 'Experience' },
+                { id: 'work', label: 'Work' },
+                { id: 'skills', label: 'Skills' },
+                { id: 'certifications', label: 'Certifications' },
                 { id: 'process', label: 'Process' },
                 { id: 'contact', label: 'Contact' }
               ].map((link) => (
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="block text-gray-400 hover:text-red-500 transition-colors text-sm"
+                  className="w-fit text-gray-400 hover:text-red-500 transition-all duration-300 text-sm hover:translate-x-1"
                 >
                   {link.label}
                 </button>

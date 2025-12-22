@@ -18,9 +18,9 @@ function App() {
       <Navbar />
       <Hero />
       <MetricsStrip />
+      <About />
       <ClientStrip />
       <ProjectGrid />
-      <About />
       <Skills />
       <Certifications />
       <Process />

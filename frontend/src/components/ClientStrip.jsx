@@ -7,13 +7,13 @@ const ClientStrip = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-12">
           <p className="text-sm uppercase tracking-wider text-gray-500 font-semibold mb-2">
-            Trusted by teams across industries
+            Professional Journey
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-            Experience across SaaS, AI/ML, and Enterprise
+            Organizations I have worked with
           </h2>
         </div>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
           {clients.map((client, index) => (
             <div

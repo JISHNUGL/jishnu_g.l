@@ -7,7 +7,7 @@ export const personalInfo = {
   tagline: "I help companies streamline operations, automate workflows, and implement revenue-generating ITSM & CRM systems.",
   email: "jishnugl92@gmail.com",
   phone: "+91 9994674488",
-  linkedin: "https://www.linkedin.com/in/jishnu-gl",
+  linkedin: "https://www.linkedin.com/in/jishnu-g-l-649167197/",
   github: "#",
   availability: "Open to work",
   startDate: "Immediate / Within 2 weeks",
@@ -37,10 +37,10 @@ export const metrics = [
 ];
 
 export const clients = [
-  { name: "Kambaa Incorporation", logo: null, industry: "Tech" },
-  { name: "NVIDIA (via Randstad)", logo: null, industry: "AI/ML" },
-  { name: "Osai e-Biz Integrators", logo: null, industry: "eCommerce" },
-  { name: "Enterprise Clients", logo: null, industry: "Various" }
+  { name: "Kambaa Incorporation", logo: null, industry: "ITSM & Business Analysis" },
+  { name: "NVIDIA (via Randstad)", logo: null, industry: "AI/ML Data Operations" },
+  { name: "Osai e-Biz Integrators", logo: null, industry: "CRM & Technical Support" },
+  { name: "Enterprise Clients", logo: null, industry: "Various Sectors" }
 ];
 
 export const projects = [
@@ -143,31 +143,6 @@ export const projects = [
     testimonial: null,
     liveUrl: null,
     codeUrl: null
-  },
-  {
-    id: 5,
-    title: "HubSpot Sales Pipeline Optimization",
-    client: "B2B Marketing Agency",
-    industry: "Marketing",
-    category: "CRM",
-    tagline: "Doubled pipeline visibility and lead conversion rates",
-    metrics: [
-      { label: "Lead Conversion", value: "+45%" },
-      { label: "Deal Velocity", value: "+30%" },
-      { label: "Revenue Impact", value: "$200K+" }
-    ],
-    tags: ["HubSpot", "Sales Pipeline", "Lead Scoring", "Reporting"],
-    problem: "Marketing agency had poor lead tracking, manual follow-ups, and no visibility into pipeline health or conversion metrics.",
-    solution: "Configured HubSpot CRM with custom pipelines, automated lead scoring, email sequences, and executive dashboards with key metrics.",
-    impact: [
-      "Increased lead-to-customer conversion by 45%",
-      "Reduced average deal cycle from 60 to 42 days",
-      "Generated $200K+ in additional revenue within 6 months",
-      "Automated 70% of routine sales follow-up tasks"
-    ],
-    testimonial: null,
-    liveUrl: null,
-    codeUrl: null
   }
 ];
 
@@ -179,13 +154,7 @@ export const achievements = [
     metric: "30% improvement",
     icon: "Target"
   },
-  {
-    id: 2,
-    title: "Revenue-Generating CRM Implementation",
-    description: "Implemented HubSpot CRM for B2B agency that generated $200K+ in additional revenue through improved pipeline visibility and automation.",
-    metric: "$200K+ impact",
-    icon: "TrendingUp"
-  },
+
   {
     id: 3,
     title: "AI/ML Dataset Quality Leadership",
@@ -324,14 +293,7 @@ export const testimonials = [
     company: "Kambaa Incorporation",
     logo: null
   },
-  {
-    id: 2,
-    quote: "The HubSpot implementation was a game-changer. We finally have visibility into our sales pipeline, and our conversion rates have never been better. Highly recommend Jishnu for CRM projects.",
-    author: "Rajesh Kumar",
-    role: "Sales Director",
-    company: "B2B Marketing Agency",
-    logo: null
-  },
+
   {
     id: 3,
     quote: "Working with Jishnu on our inventory management system was seamless. He understood our retail challenges and delivered a solution that actually works in the real world.",
