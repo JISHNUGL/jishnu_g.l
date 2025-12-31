@@ -12,6 +12,8 @@ import Process from "./components/Process";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+import { Toaster } from "./components/ui/toaster";
+
 function App() {
   return (
     <div className="App">
@@ -26,6 +28,7 @@ function App() {
       <Process />
       <Contact />
       <Footer />
+      <Toaster />
     </div>
   );
 }

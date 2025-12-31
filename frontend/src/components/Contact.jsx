@@ -22,53 +22,101 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // EmailJS Configuration
+    const formDataToSubmit = { ...formData };
+    let backendSuccess = false;
+
+    try {
+      // 1. Try to save to backend (CSV + Google Sheets)
+      const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000';
+      const backendResponse = await fetch(`${backendUrl}/api/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formDataToSubmit),
+      });
+
+      if (backendResponse.ok) {
+        backendSuccess = true;
+        console.log('Successfully saved to backend (CSV/Google Sheets)');
+      } else {
+        console.warn('Backend save failed');
+      }
+    } catch (err) {
+      console.error('Backend connection error:', err);
+    }
+
+    // 2. EmailJS Configuration
     const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID || 'service_ekfqg77';
     const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
     const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
-    if (!serviceId || !templateId || !publicKey) {
+    // Check for placeholder values
+    const isPlaceholder = (val) => !val || val.includes('your_') || val.includes('place_holder');
+    const isEmailConfigured = !isPlaceholder(templateId) && !isPlaceholder(publicKey);
+
+    // If backend was successful, show success immediately
+    if (backendSuccess) {
       toast({
-        title: "Configuration Error",
-        description: "EmailJS keys are missing. Please check your .env file.",
-        variant: "destructive",
+        title: "Successfully Submitted!",
+        description: "Your message has been updated in the records (Google Sheets/CSV).",
+        variant: "default",
       });
-      setIsSubmitting(false);
-      return;
+
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        lookingFor: 'project',
+        message: ''
+      });
     }
 
-    emailjs.sendForm(serviceId, templateId, form.current, publicKey)
-      .then((result) => {
-        toast({
-          title: "Message Sent!",
-          description: "Thank you for reaching out. I'll get back to you within 24 hours.",
-          variant: "default", // or success if available in your toast component
-        });
-
-        // Reset form
-        setFormData({
-          name: '',
-          email: '',
-          company: '',
-          lookingFor: 'project',
-          message: ''
-        });
+    // Only attempt EmailJS if explicitly configured
+    if (isEmailConfigured) {
+      emailjs.sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
       })
-      .catch((error) => {
-        console.error('EmailJS Error:', error);
-        toast({
-          title: "Error Sending Message",
-          description: "Something went wrong. Please try again or email me directly.",
-          variant: "destructive",
+        .then((result) => {
+          console.log('EmailJS Success:', result.text);
+          // If backend failed but email worked, show success now
+          if (!backendSuccess) {
+            toast({
+              title: "Message Sent!",
+              description: "Thank you for reaching out. I'll get back to you within 24 hours.",
+              variant: "default",
+            });
+            setFormData({
+              name: '',
+              email: '',
+              company: '',
+              lookingFor: 'project',
+              message: ''
+            });
+          }
+        })
+        .catch((error) => {
+          console.error('EmailJS Error:', error);
+          if (!backendSuccess) {
+            toast({
+              title: "Submission Error",
+              description: "Could not save message. Please try again later.",
+              variant: "destructive",
+            });
+          }
         });
-      })
-      .finally(() => {
-        setIsSubmitting(false);
+    } else if (!backendSuccess) {
+      // If both failed (or backend failed and email not configured)
+      toast({
+        title: "Configuration Error",
+        description: "Unable to save message. Please check connection.",
+        variant: "destructive",
       });
+    }
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -255,7 +303,7 @@ const Contact = () => {
                   ) : (
                     <>
                       <Send size={20} className="mr-2" />
-                      Send Message
+                      Submit Content
                     </>
                   )}
                 </button>

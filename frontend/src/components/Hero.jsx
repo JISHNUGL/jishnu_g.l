@@ -21,13 +21,13 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-between bg-white pt-12 md:pt-24 pb-0 relative overflow-hidden"
+      className="min-h-screen flex flex-col justify-between bg-white pt-0 md:pt-24 pb-0 relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20 h-screen flex flex-col items-center justify-center relative z-0">
 
         {/* Top Intro - Absolute Positioned */}
         <div
-          className="absolute top-24 md:top-32 left-0 right-0 text-center z-30 pointer-events-none"
+          className="absolute top-20 md:top-32 left-0 right-0 text-center z-30 pointer-events-none"
           style={{ animation: 'fadeInDown 0.7s ease-out forwards 0s' }}
         >
           <p className="text-xl md:text-2xl text-gray-600 font-medium bg-white/50 backdrop-blur-sm inline-block px-4 py-2 rounded-full">
